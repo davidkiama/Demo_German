@@ -10,7 +10,7 @@ html = response.text
 parsed_html = soup(html, "html.parser")
 link_lists = parsed_html.findAll('div', {'class': 'linkList'})
 
-#Extracting the Product details
+#Extracting the details
 master_list = []
 for link_item in link_lists:
     data_dict = {}
